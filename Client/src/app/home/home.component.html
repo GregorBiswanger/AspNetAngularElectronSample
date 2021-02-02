@@ -1,0 +1,9 @@
+<p>home</p>
+
+<button (click)="loadWeather()">Load Weather data</button>
+
+<ul>
+    <li *ngFor="let weather of weatherDatas">
+        {{ weather.temperatureC }} °C - {{ weather.summary }}
+    </li>
+</ul>

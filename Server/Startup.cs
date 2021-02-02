@@ -67,6 +67,9 @@ namespace Server
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                
+                // Hinzufügen für direkten Angular Routing support
+                endpoints.MapFallbackToFile("/index.html");
             });
 
             // Öffne Fenster, wenn es als Electron.NET App läuft
